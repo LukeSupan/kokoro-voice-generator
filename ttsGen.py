@@ -32,12 +32,6 @@ import soundfile as sf
 from kokoro import KPipeline
 
 
-def strip_directions(text):
-    # remove stage direction lines like [INTRO]. gets rid
-    lines = text.split('\n')
-    cleaned = [l for l in lines if not re.match(r'^\s*\[.*\]\s*$', l)]
-    return '\n'.join(cleaned)
-
 
 def load_script(filepath):
     try:
