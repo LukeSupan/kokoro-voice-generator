@@ -9,8 +9,12 @@ for windows at least, get this:
     https://github.com/espeak-ng/espeak-ng/releases
 
 call it like this, with specific model or whatever:
-    python halo_tts.py script.txt
-    python halo_tts.py script.txt --voice am_michael --speed 0.95 --output ttsOutput.wav
+    run.bat input.txt
+    run.bat input.txt --voice am_adam --speed 1 --output ttsOutput.wav
+
+i had to make a run.bat to run python 11 instead of 14 without too much hassle. if you dont:
+    python ttsGen.py script.txt
+    python ttsGen.py script.txt --voice am_adam --speed 1 --output ttsOutput.wav
 
 voice list
 af_heart    — warm, natural female (recommended)
